@@ -22,7 +22,7 @@ extension:
 
 repo:
   github: flozer/duckdb-firebird
-  # main after #125 (validation build, not a release)
+  # duckdb-firebird main after #125 (validation build, not a release)
   ref: fc2e930999b18c8b882a277e08d3fd5e4e85d988
   # same commit for the DuckDB v1.5.6 (variegata) build
   variegata: fc2e930999b18c8b882a277e08d3fd5e4e85d988
