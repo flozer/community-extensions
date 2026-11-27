@@ -11,8 +11,9 @@ extension:
   # platform's default dynamic-loader search path (or via
   # DUCKDB_FIREBIRD_CLIENT_LIBRARY) when they first call a firebird_*
   # function. Vendored Firebird headers under
-  # third_party/firebird/include/ (Interbase Public License) cover the
-  # compile-time requirement.
+  # third_party/firebird/include/ (Interbase Public License) and the OO
+  # API headers under third_party/firebird-oo/include/ (Initial
+  # Developer's Public License) cover the compile-time requirement.
   maintainers:
     - flozer
   # WASM is still excluded because libfbclient depends on native
@@ -21,8 +22,10 @@ extension:
 
 repo:
   github: flozer/duckdb-firebird
-  # v1.4.1 (immutable commit pin)
-  ref: 33d66af2a247b1ac7e611733f231dafd7c8d81eb
+  # main after #125 (validation build, not a release)
+  ref: fc2e930999b18c8b882a277e08d3fd5e4e85d988
+  # same commit for the DuckDB v1.5.6 (variegata) build
+  variegata: fc2e930999b18c8b882a277e08d3fd5e4e85d988
 
 docs:
   hello_world: |
